@@ -35,7 +35,7 @@ public slots:
 
     void pushButton_0()
     {
-        label->setText(label->text() = "00 channel");
+        label->setText("00 channel");
         button = (QPushButton*) sender();
         num = (button->text().toDouble());
         pressedDateTime = true;
@@ -43,7 +43,7 @@ public slots:
 
     void pushButton_1()
     {
-        label->setText(label->text() = "01 channel");
+        label->setText("01 channel");
         button = (QPushButton*) sender();
         num = (button->text().toDouble());
         pressedDateTime = true;
@@ -51,7 +51,7 @@ public slots:
 
     void pushButton_2()
     {
-        label->setText(label->text() = "02 channel");
+        label->setText("02 channel");
         button = (QPushButton*) sender();
         num = (button->text().toDouble());
         pressedDateTime = true;
@@ -59,7 +59,7 @@ public slots:
 
     void pushButton_3()
     {
-        label->setText(label->text() = "03 channel");
+        label->setText("03 channel");
         button = (QPushButton*) sender();
         num = (button->text().toDouble());
         pressedDateTime = true;
@@ -67,7 +67,7 @@ public slots:
 
     void pushButton_4()
     {
-        label->setText(label->text() = "04 channel");
+        label->setText("04 channel");
         button = (QPushButton*) sender();
         num = (button->text().toDouble());
         pressedDateTime = true;
@@ -75,7 +75,7 @@ public slots:
 
     void pushButton_5()
     {
-        label->setText(label->text() = "05 channel");
+        label->setText("05 channel");
         button = (QPushButton*) sender();
         num = (button->text().toDouble());
         pressedDateTime = true;
@@ -83,7 +83,7 @@ public slots:
 
     void pushButton_6()
     {
-        label->setText(label->text() = "06 channel");
+        label->setText("06 channel");
         button = (QPushButton*) sender();
         num = (button->text().toDouble());
         pressedDateTime = true;
@@ -91,7 +91,7 @@ public slots:
 
     void pushButton_7()
     {
-        label->setText(label->text() = "07 channel");
+        label->setText("07 channel");
         button = (QPushButton*) sender();
         num = (button->text().toDouble());
         pressedDateTime = true;
@@ -99,7 +99,7 @@ public slots:
 
     void pushButton_8()
     {
-        label->setText(label->text() = "08 channel");
+        label->setText("08 channel");
         button = (QPushButton*) sender();
         num = (button->text().toDouble());
         pressedDateTime = true;
@@ -107,7 +107,7 @@ public slots:
 
     void pushButton_9()
     {
-        label->setText(label->text() = "09 channel");
+        label->setText("09 channel");
         button = (QPushButton*) sender();
         num = (button->text().toDouble());
         pressedDateTime = true;
@@ -151,7 +151,7 @@ public slots:
             QTime ct = QTime::currentTime();
             date = cd.toString();
             currentTime = ct.toString();
-            label->setText(label->text() + '\n' + (date + '\n' +  currentTime));
+            label->setText(label->text() + '\n' + date + '\n' +  currentTime);
             pressedDateTime = false;
         }
     };
@@ -161,7 +161,7 @@ public slots:
         if (num == 9) num = -1;
         label->setText(label->text());
         str = QString::number(++num, 'g', 13);
-        label->setText("0" + (str) + " channel");
+        label->setText("0" + str + " channel");
         pressedDateTime = true;
     };
 
@@ -170,7 +170,7 @@ public slots:
         if (num == 0) num = 10;
         label->setText(label->text());
         str = QString::number(--num, 'g', 13);
-        label->setText("0" + (str) + " channel");
+        label->setText("0" + str + " channel");
         pressedDateTime = true;
     };
 
